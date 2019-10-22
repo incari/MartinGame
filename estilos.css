@@ -1,0 +1,140 @@
+body {
+  background: #75dddd;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  border: 2px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  width: 30px;
+}
+h1 {
+  margin: 30px;
+  color: whitesmoke;
+  height: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h3 {
+  margin: 0;
+  color: whitesmoke;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  color: white;
+}
+.gameboard {
+  height: 100vh;
+  width: 100vh;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 0px;
+  max-height: 60vh;
+  max-width: 60vh;
+  cursor: pointer;
+}
+
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
+.rojo {
+  background: #ca054d;
+}
+.naranja {
+  background: #e53d00;
+}
+.amarillo {
+  background: #ffe900;
+}
+.verde {
+  background: #09bc8a;
+}
+
+.rojo.light {
+  opacity: 0.4;
+}
+.naranja.light {
+  opacity: 0.4;
+}
+.amarillo.light {
+  opacity: 0.4;
+}
+.verde.light {
+  opacity: 0.4;
+}
+
+.btn-start {
+  height: 8vh;
+  width: 40vh;
+  background: black;
+  color: white;
+  font-size: 5vh;
+  border-radius: 10px;
+  position: absolute;
+  top: calc(50% + 70px);
+  left: calc(50% - 150px);
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+.puntero {
+  cursor: pointer;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

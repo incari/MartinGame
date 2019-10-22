@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego Martín Dice</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>El Juego de Martín dice:</h1>
+      <h3>
+        Instrucciones:
+      </h3>
+      <p>
+        Tu objetivo es repetir la secuencia que se irá iluminando haciendo
+        <br />click en el color correspondiente en el mismo orden que fue
+        mostrado. <br />
+        A medida que vás subiendo de nivel, la secuencia es cada vez más larga.
+      </p>
+    </div>
+
+    <div class="gameboard">
+      <div id="rojo" class="color rojo left" data-color="rojo"></div>
+      <div id="naranja" class="color naranja right" data-color="naranja"></div>
+      <div
+        id="amarillo"
+        class="color amarillo left"
+        data-color="amarillo"
+      ></div>
+      <div id="verde" class="color verde right" data-color="verde"></div>
+      <button id="btnEmpezar" class="btn-start" onClick="empezarJuego()">
+        Empezar Juego
+      </button>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
